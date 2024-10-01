@@ -59,7 +59,7 @@ Click "Create Course".
 The application will translate the content, generate a voiceover (if selected), and display the results.
 
 ## File Structure
-
+```
 course-creation-copilot/
 │
 ├── app/
@@ -85,6 +85,7 @@ course-creation-copilot/
 ├── app.py
 ├── README.md
 └── .gitignore
+```
 
 
 Contributing
