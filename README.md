@@ -1,6 +1,6 @@
-# This is a hackathon project given by Sargam Ai , on the Hackathon Organised under Devpost x Google Exchange Gen Ai 
+# This is a hackathon project given by *Sargam Ai* , on the Hackathon Organised under *Devpost* x *Google Exchange Gen Ai* 
 
-## Problem statement shared by Sarvam AI
+## Problem statement shared by *Sarvam AI*
 Design a course creation copilot, to help instructors with designing new online courses. Should have copilots for translating course content into Indian languages, adding images, animations, voiceovers, and lecture notes.
 
 The idea is to reduce the time it takes for anyone to create an online course, while delivering production-grade course quality. Can be deployed as a Chrome extension, Webapp or Smartphone app. Participants are encouraged to use Gemini and Sarvam APIs (ASR, Translation, TTS, Audio LM) to build this solution. Please also write under the problem statement: Participants can apply for access to [Sarvam APIs here](https://docs.sarvam.ai/api-reference-docs/authentication).
