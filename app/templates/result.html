@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - Created</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> 
+</head>
+<body>
+    <div class="container">
+        <h1>{{ title }} - Translated Course</h1>
+        <p>{{ content }}</p>
+
+        {% if voiceover %}
+            <h2>Google Voiceover:</h2> <audio controls>
+                <source src="{{ url_for('static', filename=voiceover) }}" type="audio/mpeg"> 
+                Your browser does not support the audio element.
+            </audio>
+        {% endif %}
+
+        {% if sarvam_voiceover %}
+            <h2>Sarvam Voiceover:</h2>
+            <audio controls>
+                <source src="{{ url_for('static', filename=sarvam_voiceover) }}" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        {% endif %}
+
+        {% if image_path %}
+            <h2>Uploaded Image:</h2>
+            <img src="{{ url_for('static', filename=image_path) }}" alt="Uploaded Image" width="500">
+        {% endif %}
+    </div>
+</body>
+</html>

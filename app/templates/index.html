@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Creation Copilot</title>
+    <link rel="stylesheet" href="app/static/css/style.css">
+</head>
+<body>
+    <div class="container"> 
+        <h1>Course Creation Copilot</h1>
+        <form id="courseForm" action="/create-course" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="courseTitle">Course Title:</label>
+                <input type="text" id="courseTitle" name="courseTitle" required>
+            </div>
+
+            <div class="form-group">
+                <label for="courseContent">Course Content:</label>
+                <textarea id="courseContent" name="courseContent" rows="10" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="tts_engine">TTS Engine:</label>
+                <select id="tts_engine" name="tts_engine">
+                    <option value="google">Google Cloud TTS</option>
+                    <option value="sarvam">Sarvam TTS</option>
+                </select>
+            </div>
+            
+
+            <div class="form-group">
+                <label for="language">Translate to Language:</label>
+                <select id="language" name="language">
+                    <option value="hi">Hindi</option>
+                    <option value="ta">Tamil</option>
+                    <option value="bn">Bengali</option>
+                    <!-- Add other Indian languages -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <input type="checkbox" id="addVoiceover" name="addVoiceover">
+                <label for="addVoiceover">Add Voiceover?</label>
+            </div>
+
+            <div class="form-group">
+                <label for="uploadImage">Upload Image (Optional):</label>
+                <input type="file" id="uploadImage" name="uploadImage" accept="image/*">
+            </div>
+
+            <button type="submit">Create Course</button>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script> </body>
+</html>
